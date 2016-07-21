@@ -783,6 +783,9 @@
 #pragma mark WebView Delegate
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
+    
+    self.shouldStartRequest(request, navigationType);
+    
     BOOL shouldStart = YES;
     
     //If a request handler has been set, check to see if we should go ahead
