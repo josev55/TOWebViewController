@@ -943,8 +943,8 @@
 
 - (void)doneButtonTapped:(id)sender
 {
-    if (doneButtonHandler) {
-        doneButtonHandler();
+    if (self.doneButtonHandler) {
+        self.doneButtonHandler();
     } else {
         [self.presentingViewController dismissViewControllerAnimated:YES completion:self.modalCompletionHandler];
     }
