@@ -127,6 +127,8 @@
 
 @property (nonatomic, assign) BOOL initialLoad;
 
+@property (nonatomic, copy) void (^doneButtonHandler)(void);
+
 /* Perform all common setup steps */
 - (void)setup;
 
@@ -941,7 +943,12 @@
 
 - (void)doneButtonTapped:(id)sender
 {
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:self.modalCompletionHandler];
+    if (doneButtonHandler) {
+        doneButtonHandler();
+    } else {
+        [self.presentingViewController dismissViewControllerAnimated:YES completion:self.modalCompletionHandler];
+    }
+    
 }
 
 #pragma mark -
