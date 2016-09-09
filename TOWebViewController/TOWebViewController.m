@@ -127,8 +127,6 @@
 
 @property (nonatomic, assign) BOOL initialLoad;
 
-@property (nonatomic, copy) void (^doneButtonHandler)(void);
-
 /* Perform all common setup steps */
 - (void)setup;
 

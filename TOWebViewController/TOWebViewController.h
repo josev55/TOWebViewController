@@ -187,4 +187,6 @@ An optional block that when set, will be triggered each time the web view has fi
 
 @property (nonatomic, copy, nonnull) void (^shouldStartRequest)(NSURLRequest *,UIWebViewNavigationType);
 
+@property (nonatomic, copy) void (^doneButtonHandler)(void);
+
 @end
