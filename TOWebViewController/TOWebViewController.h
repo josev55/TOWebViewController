@@ -47,6 +47,8 @@
  */
 @property (nonatomic,strong)    NSURL *url;
 
+@property (nonatomic,strong) UIBarButtonItem *doneButton;             /* The 'Done' button for modal contorllers */
+
 /** 
  Get/set the request
  */

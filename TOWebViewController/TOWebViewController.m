@@ -100,7 +100,6 @@
 @property (nonatomic,strong) UIBarButtonItem *forwardButton;          /* Moves the web view one page forward */
 @property (nonatomic,strong) UIBarButtonItem *reloadStopButton;       /* Reload / Stop buttons */
 @property (nonatomic,strong) UIBarButtonItem *actionButton;           /* Shows the UIActivityViewController */
-@property (nonatomic,strong) UIBarButtonItem *doneButton;             /* The 'Done' button for modal contorllers */
 
 /* Load Progress Manager */
 @property (nonatomic,strong) NJKWebViewProgress *progressManager;
